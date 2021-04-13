@@ -102,7 +102,7 @@ section {
     transition: 1s;
 }
 .now-playing {
-    background: url(../images/now-playing.png);
+    background: url(../images/Now-playing.png);
     border: 2px solid lightblue;
     background-position: center;
     background-size: cover;
