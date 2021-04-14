@@ -78,9 +78,7 @@ section {
     grid-gap: 20px;
 
 }
-.run-buddy {
-    background: url(../images/run-buddy.png);
-    grid-area: 1/1/3/3;
+.work-card {
     border: 2px solid lightblue;
     background-position: center;
     background-size: cover;
@@ -89,37 +87,28 @@ section {
     align-items: flex-end;
     opacity: 0.75;
     transition: 1s;
+}
+.run-buddy {
+    background-image: url(../images/run-buddy.png);
+    background-size: cover;
 }
 .cinequiz {
-    background: url(../images/Cinequiz.png);
-    border: 2px solid lightblue;
-    background-position: center;
+    background-image: url(../images/Cinequiz.png);
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: flex-end;
-    opacity: 0.75;
-    transition: 1s;
 }
 .now-playing {
-    background: url(../images/Now-playing.png);
-    border: 2px solid lightblue;
-    background-position: center;
+    background-image: url(../images/Now-playing.png);
+    grid-area: 1/1/3/3;
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: flex-end;
-    opacity: 0.75;
-    transition: 1s;
 }
 .card {
-    background-color: rgba(69, 84, 90, 0.85);
+    background-color: rgba(69, 84, 90, 0.5);
     border: 1px solid lightblue;
     margin-left: 0px;
     padding: 0px 10px;
     z-index: 2;
 }
-.run-buddy:hover {
+.work-card:hover {
     opacity: 1;
 }
 /* CONTACT SECTION */
