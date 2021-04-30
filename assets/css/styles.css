@@ -10,6 +10,7 @@ body {
     color: lightblue;
     font-size: 26px;
 }
+
 nav ul li {
     list-style-type: none;
 }
@@ -34,8 +35,8 @@ nav ul li {
     color: lightblue;
     text-decoration: none;
 }
-.work-card a {
-    color:lightblue;
-    text-decoration: none;
+.work-section a {
+    color: lightblue;
 }
+
 

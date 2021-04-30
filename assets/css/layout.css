@@ -63,7 +63,7 @@ section {
 
 .section-p{
     grid-column-start: 2;
-    padding: 5px 0;
+    padding: 5px 5px;
 }
 #about-me .section-title {
     grid-row: 1/3;
@@ -96,29 +96,7 @@ section {
     opacity: 0.75;
     transition: 1s;
 }
-.run-buddy {
-    background-image: url(../images/run-buddy.png);
-    background-size: cover;
-}
-.cinequiz {
-    background-image: url(../images/Cinequiz.png);
-    background-size: cover;
-}
-.now-playing {
-    background-image: url(../images/Now-playing.png);
-    grid-area: 1/1/3/3;
-    background-size: cover;
-}
-.card {
-    background-color: rgba(69, 84, 90, 0.5);
-    border: 1px solid lightblue;
-    margin-left: 0px;
-    padding: 0px 10px;
-    z-index: 2;
-}
-.work-card:hover {
-    opacity: 1;
-}
+
 /* CONTACT SECTION */
 .contact-container {
     display: flex;
@@ -142,6 +120,10 @@ section {
     }
     .contact-container {
         flex-direction: column;
+    }
+    #work-section img {
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -170,21 +152,22 @@ section {
         justify-content: center;
         align-items: flex-end;
     }
-    .work-links {
-        padding-right: 10px;
-        grid-template-columns: 1fr;
-    }
-    .run-buddy{
-        grid-area: 1/1/2/2;
-        opacity: 1;
-    }
-    section#work .section-title {
-        padding-top: 0px;
-        margin-top: 0px;
-        height: auto;
-    }
     .contact-container {
         flex-direction: column;
+    }
+    #work-section img {
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 1px 1px 10px black; 
+    }
+    .card-body, .card-title {
+        padding: 0 5px;
+    }
+    .section-text {
+        padding: 0;
+    }
+    #about-me p {
+        padding: 0 10px;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -198,5 +181,19 @@ section {
     }
     #contact-me .contact-info {
         font-size: smaller;
+    }
+    #work-section img {
+        width: 100%;
+        text-align: center;
+        box-shadow: 1px 1px 10px black;
+    }
+    .card-body, .card-title {
+        padding: 0 5px;
+    }
+    .section-text {
+        padding: 0;
+    }
+    #about-me p {
+        padding: 0 10px;
     }
 }
