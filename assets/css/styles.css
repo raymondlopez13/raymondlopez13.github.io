@@ -21,11 +21,6 @@ nav ul li {
 /* END HEADER STYLES */
 
 /* HERO STYLES */
-.hero-text{
-    background-color: var(--bg);
-    color:lightblue;
-    box-shadow: 2px 2px 5px black;
-}
 /* END HERO STYLES */
 
 /* CONTENT STYLES */
