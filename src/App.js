@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 function App() {
   const [page, setPage] = useState('About Me');
   function renderPage() {
@@ -27,6 +28,7 @@ function App() {
         renderPage={renderPage}
       />
       {renderPage()}
+      <Footer />
     </div>
   );
 }

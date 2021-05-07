@@ -11,7 +11,7 @@ body {
 nav {
   display: grid;
   background-color: var(--green);
-  padding: 10px 0;
+  padding: 20px 0 0 0;
   margin: 0;
   align-items: center;
   grid-template-rows: 33% 1fr;
@@ -22,12 +22,14 @@ nav {
   justify-content: space-evenly;
   list-style: none;
   padding: 0;
+  margin-top: 20px;
   
 }
 .navLink {
   text-decoration: none;
   color: var(--maroon);
   font-size: 20px;
+  font-weight: bolder;
 }
 .h1-nav {
   text-align: center;
@@ -35,6 +37,18 @@ nav {
   color: var(--maroon);
   font-size: 30px;
   
+}
+/* FOOTER STYLES */
+.footer {
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+.footer a {
+  font-size: 30px;
+  padding: 20px;
+  color:whitesmoke;
 }
 /*ABOUT ME STYLES*/
 .about {
@@ -58,4 +72,57 @@ nav {
 }
 .aboutP {
   font-size: 20px;
+  color: var(--maroon);
+  font-weight: bolder;
+}
+
+/* PORTFOLIO STYLES */
+#projects {
+  text-align: center;
+  margin: 20px auto 0;
+  width: 90%;
+  
+}
+.Project {
+  background-color: var(--pink);
+  padding: 10px;
+  margin: 10px auto;
+  border: 4px solid whitesmoke;
+  border-radius: 20px 0 20px 0;
+  opacity: .65;
+}
+.Project:hover {
+  opacity: 1;
+}
+.Project img {
+  background-color: white;
+  width: 90%;
+  border: 2px solid whitesmoke;
+  box-shadow: 1px 1px 5px black;
+}
+.Project a {
+  font-size: 30px;
+  padding: 5px;
+  margin: 10px 0;
+  color: black;
+}
+.Project h3 {
+  font-size: 40px;
+  margin: 0;
+}
+.Project p {
+  width: fit-content;
+  font-size: 19px;
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  text-align: left;
+  padding: 20px 10px;
+}
+.Project div {
+  border-left: 3px solid whitesmoke;
+  border-right: 3px solid whitesmoke;
+  width:fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
 }
