@@ -8,7 +8,6 @@ import Footer from './components/Footer';
 function App() {
   const [page, setPage] = useState('About Me');
   function renderPage() {
-    console.log(page);
     switch(page) {
       case 'Portfolio':
         return <Portfolio />;
@@ -17,6 +16,8 @@ function App() {
       case 'Resume':
         return <Resume />;
       case 'About Me':
+        return <About />;
+      default:
         return <About />;
     }
   }

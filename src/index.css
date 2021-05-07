@@ -89,10 +89,7 @@ nav {
   margin: 10px auto;
   border: 4px solid whitesmoke;
   border-radius: 20px 0 20px 0;
-  opacity: .65;
-}
-.Project:hover {
-  opacity: 1;
+  color: var(--maroon);
 }
 .Project img {
   background-color: white;
@@ -125,4 +122,69 @@ nav {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10px;
+}
+/* CONTACT STYLES */
+.contact {
+  background-color: var(--pink);
+  border: 3px solid whitesmoke;
+  width: 40%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 318px;
+  border-radius: 20px 0 20px 0;
+  color: var(--maroon);
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.contact input {
+  width: 50%;
+  margin: 2px auto;
+}
+.contact button {
+  width: fit-content;
+  margin: 2px auto;
+  font-size: 20px;
+}
+.contact textarea {
+  margin: 2px 10px;
+}
+/* RESUME STYLES */
+.resume{
+  background-color: var(--pink);
+  border: 3px solid whitesmoke;
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 318px;
+  border-radius: 20px 0 20px 0;
+  color: var(--maroon);
+}
+.resume a{
+  font-size: 20px;
+  color: var(--maroon);
+}
+.resume h2 {
+  font-size: 40px;
+}
+.resume h3 {
+  font-size: 30px;
+}
+.resume p {
+  font-size: 20px;
+}
+.experience {
+  border-top: 3px solid whitesmoke;
+  width: 80%;
+  margin: 0 auto;
+}
+.job {
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
 }

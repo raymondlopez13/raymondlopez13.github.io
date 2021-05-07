@@ -27,6 +27,8 @@ function Portfolio() {
                 return nowPlaying;
             case 'Cinequiz':
                 return cinequiz;
+            default:
+                return '';
         }
     }
     return (
