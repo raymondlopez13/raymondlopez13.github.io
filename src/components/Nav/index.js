@@ -21,10 +21,11 @@ function Nav(props) {
     ]
     return (
         <nav>
-            <ul>
+            <h1 className='h1-nav'>Raymond Lopez</h1>
+            <ul className='navLinks'>
                 {links.map((link) => (
-                    <li>
-                        <a href={link.id} id={link.id} onClick={() => (
+                    <li key={link.name}>
+                        <a  className='navLink'href={link.id} id={link.id} onClick={() => (
                             props.setPage(link.name)
                             )
                         }>

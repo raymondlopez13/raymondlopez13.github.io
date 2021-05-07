@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --maroon: #764248;
+  --pink: #E3C5BB;
+  --green: #DFE2CF;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: var(--maroon);
+  margin: 0;
+}
+/* NAV STYLES */
+nav {
+  display: grid;
+  background-color: var(--green);
+  padding: 10px 0;
+  margin: 0;
+  align-items: center;
+  grid-template-rows: 33% 1fr;
+  border-bottom: 4px solid whitesmoke;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  
+}
+.navLink {
+  text-decoration: none;
+  color: var(--maroon);
+  font-size: 20px;
+}
+.h1-nav {
+  text-align: center;
+  margin: 0;
+  color: var(--maroon);
+  font-size: 30px;
+  
+}
+/*ABOUT ME STYLES*/
+.about {
+  text-align: center;
+}
+.about img{
+  margin: 10px auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px black;
+  border: 4px solid white;
+  width: 40%;
+  max-width: 500px;
+}
+.about-text {
+  background-color: var(--pink);
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 4px solid white;
+  border-radius: 30px 0 30px 0;
+}
+.aboutP {
+  font-size: 20px;
 }

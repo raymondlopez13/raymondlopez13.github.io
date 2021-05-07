@@ -1,25 +1,41 @@
 import React from 'react';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
+import nowPlaying from '../../assets/nowPlaying.png';
+import cinequiz from '../../assets/cinequiz.png';
+
 
 function Portfolio() {
     const projects = [
         {
             name: 'Now Playing',
-            img: 'nowPlaying',
             description: 'Now playing is a social media app that lets users see what albums their friends have been listening to',
-            tech: 'Handlebars, Express, Sequelize'
+            tech: 'Handlebars, Express, Sequelize',
+            github: 'https://github.com/drewvena/now-playing',
+            app: 'https://nowplayingapp.herokuapp.com/login',
         },
         {
             name: 'Cinequiz',
-            img: 'cinequiz',
             description: 'Cinequiz is a interactive movie quiz game that tracks users scores',
-            tech: 'HTML, CSS, JS, OMDb API, GIPHY API'
+            tech: 'HTML, CSS, JS, OMDb API, GIPHY API',
+            github: 'https://github.com/drewvena/git-it-right',
+            app: 'https://drewvena.github.io/git-it-right/',
         }
     ];
+    function photoReturn(img) {
+        switch(img) {
+            case 'Now Playing':
+                return nowPlaying;
+            case 'Cinequiz':
+                return cinequiz;
+        }
+    }
     return (
         <section id="projects">
             {projects.map((project) => (
-                <div className="Project">
-                    <img src={`../../assets/${project.img}.jpg`} alt={`${project.name}`} />
+                <div className="Project" key={project.name}>
+                    <img src={photoReturn(project.name)} alt={`${project.name}`} />
+                    <a href={project.github}><FaGithub /></a>
+                    <a href={project.app}><FaGlobe /></a>
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
                     <p>{project.tech}</p>
