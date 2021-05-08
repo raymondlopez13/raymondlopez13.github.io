@@ -96,6 +96,7 @@ nav {
   width: 90%;
   border: 2px solid whitesmoke;
   box-shadow: 1px 1px 5px black;
+  max-width: 1024px;
 }
 .Project a {
   font-size: 30px;
