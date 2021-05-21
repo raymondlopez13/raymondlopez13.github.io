@@ -1,6 +1,8 @@
-# portfolio
-A responsive porftolio using react.
+# Portfolio
+My personal portfolio! Users can navigate and view my projects, resume, and contact information!
 
+## Deployed app
 https://raymondlopez13.github.io/
 
-![](assets/images/portfolio.png)
+## Tech
+React
