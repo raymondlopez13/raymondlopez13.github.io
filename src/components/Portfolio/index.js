@@ -21,11 +21,11 @@ function Portfolio() {
             app: 'https://drewvena.github.io/git-it-right/',
         },
         {
-            name: 'Budget Tracker',
-            description: 'The Budget Tracking app lets you log your expenses, even while offline.',
-            tech: 'PWA, idb, JS',
-            github: 'https://github.com/raymondlopez13/supreme-doodle',
-            app: 'https://mighty-waters-09092.herokuapp.com/',
+            name: 'Flambot-Corp',
+            description: 'Flambot-Corp is an online shopping website that lets users create accounts and login, add items to cart, filter items, as well as checkout.',
+            tech: 'Stripe, React, PWA, idb, JS',
+            github: 'https://github.com/drewvena/flambot-corp',
+            app: 'https://flambot-corp.herokuapp.com/',
         },
         {
             name: 'Team Profile Generator',
@@ -56,8 +56,10 @@ function Portfolio() {
                 return <img src={nowPlaying} alt='Now Playing' />;
             case 'Cinequiz':
                 return <img src={cinequiz} alt='Cinequiz' />;
+            case 'Flambot-Corp':
+                return <img src='https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png' alt='Flambot-Corp' />;
             default:
-                return '';
+                return;
         }
     }
     return (
