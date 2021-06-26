@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.653a64f1.chunk.css",
-    "main.js": "/static/js/main.8d026aa3.chunk.js",
-    "main.js.map": "/static/js/main.8d026aa3.chunk.js.map",
+    "main.css": "/static/css/main.85dd37b3.chunk.css",
+    "main.js": "/static/js/main.c1adca79.chunk.js",
+    "main.js.map": "/static/js/main.c1adca79.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
     "static/js/2.022dc5af.chunk.js": "/static/js/2.022dc5af.chunk.js",
     "static/js/2.022dc5af.chunk.js.map": "/static/js/2.022dc5af.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.653a64f1.chunk.css.map": "/static/css/main.653a64f1.chunk.css.map",
+    "static/css/main.85dd37b3.chunk.css.map": "/static/css/main.85dd37b3.chunk.css.map",
     "static/js/2.022dc5af.chunk.js.LICENSE.txt": "/static/js/2.022dc5af.chunk.js.LICENSE.txt",
     "static/media/Headshot-min.17d7b039.jpg": "/static/media/Headshot-min.17d7b039.jpg",
+    "static/media/Houston_Rockets.svg.e459998d.png": "/static/media/Houston_Rockets.svg.e459998d.png",
     "static/media/Resume.9e6151df.docx": "/static/media/Resume.9e6151df.docx",
     "static/media/cinequiz.13743d83.jpg": "/static/media/cinequiz.13743d83.jpg",
+    "static/media/dogs.a990e874.jpg": "/static/media/dogs.a990e874.jpg",
+    "static/media/minecraft.b5b91e9f.png": "/static/media/minecraft.b5b91e9f.png",
     "static/media/nowPlaying.e4d82e19.png": "/static/media/nowPlaying.e4d82e19.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
     "static/js/2.022dc5af.chunk.js",
-    "static/css/main.653a64f1.chunk.css",
-    "static/js/main.8d026aa3.chunk.js"
+    "static/css/main.85dd37b3.chunk.css",
+    "static/js/main.c1adca79.chunk.js"
   ]
 }
