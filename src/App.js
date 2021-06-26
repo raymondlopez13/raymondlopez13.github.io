@@ -29,7 +29,6 @@ function App() {
         renderPage={renderPage}
       />
       {renderPage()}
-      <Footer />
     </div>
   );
 }

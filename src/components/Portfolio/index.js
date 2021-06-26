@@ -26,29 +26,7 @@ function Portfolio() {
             tech: 'Stripe, React, PWA, idb, JS',
             github: 'https://github.com/drewvena/flambot-corp',
             app: 'https://flambot-corp.herokuapp.com/',
-        },
-        {
-            name: 'Team Profile Generator',
-            description: 'An interactive terminal project that prompts to you input employees of your business.',
-            tech: 'JS, Node',
-            github: 'https://github.com/raymondlopez13/team-profile-generator',
-            app: '#',
-        },
-        {
-            name: 'Note Taker',
-            description: 'This app allows the user to take notes and have them saved.',
-            tech: 'JS, Express',
-            github: 'https://github.com/raymondlopez13/note-taker',
-            app: 'https://evening-scrubland-13174.herokuapp.com/',
-        },
-        {
-            name: 'Food Festival',
-            description: 'This app is for a fake food festival so users can navigate the event, even while offline',
-            tech: 'JS, Webpack, idb',
-            github: 'https://github.com/raymondlopez13/food-festival',
-            app: 'https://raymondlopez13.github.io/food-festival/',
-        },
-        
+        },  
     ];
     function photoReturn(img) {
         switch(img) {
