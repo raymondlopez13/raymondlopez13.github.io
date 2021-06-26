@@ -24,27 +24,11 @@ function Contact() {
             setFormState({ ...formState, [e.target.name]: e.target.value })
         }
     }
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(formState);
-    }
+    
     return (
         <div className='contact'>
-            <h2>Contact Me!</h2>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='Name'>Name:</label>
-                <input type="text" name='Name' onBlur={handleChange} defaultValue={name} />
-                <label htmlFor='Email'>Email:</label>
-                <input type="email" name='Email' onBlur={handleChange} defaultValue={email} />
-                <label htmlFor="Message">Message:</label>
-                <textarea rows='5' name='Message' onBlur={handleChange} defaultValue={message}></textarea>
-                {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-                )}
-                <button type='submit'>Submit</button>
-            </form>
+            <h1>Contact Me!</h1>
+            <h2><a href='mailto: raymondlopez13@yahoo.com'>Email!</a></h2>
         </div>
     )
 }

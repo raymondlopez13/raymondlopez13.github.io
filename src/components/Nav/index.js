@@ -1,6 +1,6 @@
 import React from 'react';
 import headshot from '../../assets/Headshot-min.jpg';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 function Nav(props) {
     const links = [
@@ -11,10 +11,6 @@ function Nav(props) {
         {
             name: 'Portfolio',
             id: '#portfolio',
-        },
-        {
-            name: 'Contact',
-            id: '#contact',
         },
         {
             name: 'Resume',
@@ -30,6 +26,8 @@ function Nav(props) {
             <a href="https://github.com/raymondlopez13" target='_blank' rel="noreferrer"><FaGithub /></a>
             <a href="https://www.linkedin.com/in/raymond-lopez-b8473a1ba/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
             <a href="https://twitter.com/Raylo1998" target='_blank' rel="noreferrer"><FaTwitter /></a>
+            <a href='mailto:raymondlopez13@yahoo.com'><FaEnvelope /></a>
+            
         </section>
             </div>
             <ul className='navLinks'>
