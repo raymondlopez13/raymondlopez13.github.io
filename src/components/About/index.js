@@ -1,7 +1,5 @@
 import React from 'react';
-import rockets from '../../assets/Houston_Rockets.svg.png';
-import dogs from '../../assets/dogs.jpg';
-import minecraft from '../../assets/minecraft.png';
+import { FaBasketballBall, FaDog, FaGamepad } from 'react-icons/fa';
 
 function About() {
     
@@ -14,19 +12,16 @@ function About() {
                 </p>
             </div>
             <div className="personal">
-                <div className="rockets">
-                    <img src={rockets} alt="rockets logo" className="rocket-logo"/>
+                <div className="dogs">
+                    <FaBasketballBall className='icon'/>
                     <p className='rockets-p'>I love basketball and am a huge Rockets fan!</p>
                 </div>
                 <div className="dogs">
-                    <figure>
-                        <img src={dogs} alt="my dogs" className="dog-photo" />
-                        <figcaption>Catalina and Lilith</figcaption>
-                    </figure>
-                    <p className="rockets-p">These are my two pitbulls that I have with my girlfriend! I love to spend my free time playing with them and watching them get zoomies!</p>
+                    <FaDog className='icon'/>
+                    <p className="rockets-p">I love dogs, especially pitbulls! I have two of my own that love to play and sleep.</p>
                 </div>
                 <div className="minecraft">
-                    <img src={minecraft} alt="minecraft" className="minecraft-photo" />
+                    <FaGamepad className='icon'/>
                     <p className="rockets-p">Minecraft is my favorite game! I love to play with my friends when I can.</p>
                 </div>
             </div>
