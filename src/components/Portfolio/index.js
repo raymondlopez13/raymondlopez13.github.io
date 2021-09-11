@@ -2,10 +2,18 @@ import React from 'react';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import nowPlaying from '../../assets/nowPlaying.png';
 import cinequiz from '../../assets/cinequiz.jpg';
+import carWashYeah from '../../assets/CarWashYeah.png';
 
 
 function Portfolio() {
     const projects = [
+        {
+            name: 'Car Wash Yeah',
+            description: 'Car Wash Yeah is a site where users can schedule appointments for a car detail. Users can choose between a detail for their car or truck, then get to set the appointment date, and time based on the availability of the Admin. Once a time is chosen, users are then asked to give their information, and pay using the PayPal API. Upon payment, they are taken to a success screen where they can go back to the home page.',
+            tech: 'React, PayPal API, MongoDB, react-calender, axios',
+            github: 'https://github.com/raymondlopez13/car-wash',
+            app: 'https://carwashyeah.herokuapp.com/',
+        }, 
         {
             name: 'Now Playing',
             description: 'Now playing is a social media app that lets users see what albums their friends have been listening to. For this project I was mainly in charge of the backend. I used express for the routing and sequelize to serve data for the front end team.',
@@ -36,6 +44,8 @@ function Portfolio() {
                 return <img src={cinequiz} alt='Cinequiz' />;
             case 'Flambot-Corp':
                 return <img src='https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png' alt='Flambot-Corp' />;
+            case 'Car Wash Yeah':
+                return <img src={carWashYeah} alt='Car Wash Yeah' />;
             default:
                 return;
         }
@@ -51,7 +61,7 @@ function Portfolio() {
                         <a href={project.app} target='_blank' rel="noreferrer"><FaGlobe /></a>
                     </div>
                     <p>{project.description}</p>
-                    <p>Technologies used: {project.tech}</p>
+                    <div><h3>Technologies used:</h3> <h1 className='tech'>{project.tech}</h1></div>
                 </div>
             ))}
         </section>

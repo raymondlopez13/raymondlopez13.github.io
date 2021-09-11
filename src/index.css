@@ -7,6 +7,8 @@ body {
   background-color: var(--pink);
   margin: 0;
   line-height: 2;
+  font-family: Teko, 'serif';
+  letter-spacing: 1px;
 }
 /* NAV STYLES */
 nav {
@@ -128,14 +130,17 @@ figcaption {
   text-align: center;
   margin: 20px auto 0;
   width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .Project {
   background-color: var(--pink);
   margin: 10px 15px;
   border: 4px solid var(--maroon);
   color: white;
+  min-width: 500px;
+  max-width: 1024px;
 }
 .Project img {
   background-color: white;
@@ -165,6 +170,9 @@ figcaption {
   margin-left: auto;
   margin-bottom: 10px;
 }
+.tech {
+  font-size: 35px !important;
+}
 /* RESUME STYLES */
 .resume{
   background-color: var(--pink);
@@ -179,26 +187,31 @@ figcaption {
   color: white;
 }
 .resume a{
-  font-size: 20px;
+  font-size: 30px;
   color: white;
 }
 .resume h2 {
   font-size: 40px;
 }
 .resume h3 {
-  font-size: 30px;
+  font-size: 40px;
 }
 .resume p {
-  font-size: 20px;
+  font-size: 40px;
 }
 .experience {
-  border-top: 4px solid whitesmoke;
   width: 80%;
   margin: 0 auto;
 }
 .job {
   border-left: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
+}
+.skills {
+  border-left: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
+  width: 80%;
+  margin: 0px auto 10px auto;
 }
 
 
@@ -233,6 +246,7 @@ figcaption {
     width: 90%;
     margin: auto auto;
   }
+
   .personal {
     border-left: none;
     margin-top: 40px;
@@ -252,7 +266,7 @@ figcaption {
     font-size: 20px;
   }
   .aboutP, .rockets-p {
-    font-size: 15px;
+    font-size: 20px;
   }
   nav {
     display: grid;
@@ -275,5 +289,20 @@ figcaption {
   }
   #projects {
     width: 100%;
+  }
+  .tech {
+    font-size: 25px !important;
+  }
+  .resume h2 {
+    font-size: 40px;
+  }
+  .resume h3 {
+    font-size: 30px;
+  }
+  .resume p {
+    font-size: 30px;
+  }
+  .Project {
+    min-width: 0px !important;
   }
 }
