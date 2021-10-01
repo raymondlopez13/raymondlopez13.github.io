@@ -1,8 +1,8 @@
 import React from 'react';
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import nowPlaying from '../../assets/nowPlaying.png';
-import cinequiz from '../../assets/cinequiz.jpg';
 import carWashYeah from '../../assets/CarWashYeah.png';
+import rosterTracker from '../../assets/roster-tracker.png';
 
 
 function Portfolio() {
@@ -22,11 +22,11 @@ function Portfolio() {
             app: 'https://nowplayingapp.herokuapp.com/login',
         },
         {
-            name: 'Cinequiz',
-            description: 'Cinequiz is a interactive movie quiz game that tracks users scores. I mainly worked on the game functionality: when the next question would be presented, displaying the names of actors from OMDb API, and displaying high scores.',
-            tech: 'HTML, CSS, JS, OMDb API, GIPHY API',
-            github: 'https://github.com/drewvena/git-it-right',
-            app: 'https://drewvena.github.io/git-it-right/',
+            name: 'Roster Tracker',
+            description: 'Roster Tracker is an app that allows users to create accounts, and create different rosters once signed in. Users can create different positions for their roster, and add members to their roster with assigned positions.',
+            tech: 'Python, Django',
+            github: 'https://github.com/raymondlopez13/djagno_employee_tracker',
+            app: 'https://raymondlopez13-django-roster.herokuapp.com/',
         },
         {
             name: 'Flambot-Corp',
@@ -40,10 +40,10 @@ function Portfolio() {
         switch(img) {
             case 'Now Playing':
                 return <img src={nowPlaying} alt='Now Playing' />;
-            case 'Cinequiz':
-                return <img src={cinequiz} alt='Cinequiz' />;
             case 'Flambot-Corp':
                 return <img src='https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png' alt='Flambot-Corp' />;
+            case 'Roster Tracker':
+                return <img src={rosterTracker} alt='Roster-Tracker' />;
             case 'Car Wash Yeah':
                 return <img src={carWashYeah} alt='Car Wash Yeah' />;
             default:

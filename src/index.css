@@ -4,7 +4,7 @@
   --green: #DFE2CF;
 }
 body {
-  background-color: var(--pink);
+  background-color: white;
   margin: 0;
   line-height: 2;
   font-family: Teko, 'serif';
@@ -13,18 +13,18 @@ body {
 /* NAV STYLES */
 nav {
   display: grid;
-  background: linear-gradient(to left, black, rgb(22, 22, 22), black);
+  background: white;
   padding: 20px 0 0 0;
   margin: 0;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 6px solid var(--maroon);
+  border-bottom: 6px solid black;
 }
 .navPhoto {
   width: 250px;
   margin: 0px auto;
   border-radius: 50%;
-  border: 6px solid var(--maroon);
+  border: 6px solid black;
   width: 40%;
   max-width: 500px;
 }
@@ -39,12 +39,12 @@ nav {
 }
 .navLink {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 40px;
 }
 .h1-nav {
   margin: 0;
-  color: White;
+  color: black;
   font-size: 40px;
   
 }
@@ -60,7 +60,7 @@ nav {
 .footer a {
   font-size: 30px;
   padding: 0px 10px;
-  color:whitesmoke;
+  color:black;
 }
 /*ABOUT ME STYLES*/
 .about {
@@ -69,25 +69,23 @@ nav {
   grid-template-columns: 66% 33%;
 }
 .aboutMeH1 {
-  color: white;
+  color: black;
   font-size: 40px;
 }
 .about-text {
   width: 75%;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 10px;
   max-width: 1024px;
 }
 .aboutP {
   font-size: 30px;
-  color: white;
-  border-left: 6px solid var(--maroon);
-  border-bottom: 6px solid var(--maroon);
+  color: black;
   padding: 5px;
 }
 .personal {
   text-align: center;
-  border-left: 6px solid var(--maroon);
+  border-left: 6px solid black;
 }
 .icon {
   font-size: 100px;
@@ -96,18 +94,17 @@ nav {
 .rockets {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 4px dashed var(--maroon);
-  padding-bottom: 10px;
+  border-bottom: 4px dashed black;
 }
 .rockets-p {
-  color: white;
+  color: black;
   font-size: 25px;
   margin: auto;
   width: 75%;
 }
 .dogs {
   text-align: center;
-  border-bottom: 4px dashed var(--maroon);
+  border-bottom: 4px dashed black;
   padding-bottom: 10px;
 }
 .dog-photo {
@@ -135,10 +132,10 @@ figcaption {
   flex-wrap: wrap;
 }
 .Project {
-  background-color: var(--pink);
+  background-color: white;
   margin: 10px 15px;
-  border: 4px solid var(--maroon);
-  color: white;
+  border: 4px solid black;
+  color: black;
   min-width: 500px;
   max-width: 1024px;
 }
@@ -146,7 +143,7 @@ figcaption {
   background-color: white;
   width: 100%;
   max-width: 1024px;
-  border-bottom: 4px solid var(--maroon);
+  border-bottom: 4px solid black;
 }
 .Project a {
   font-size: 30px;
@@ -174,44 +171,29 @@ figcaption {
   font-size: 35px !important;
 }
 /* RESUME STYLES */
-.resume{
-  background-color: var(--pink);
-  border: 4px solid var(--maroon);
-  width: 70%;
+.border {
+  background-color: white;
+  border: 4px solid black;
   margin: 20px auto;
+  border-radius: 20px 0 20px 0;
+  width: 70%;
+  text-align: center;
+  max-width: 1400px;
+}
+.border a {
+  font-size: 50px;
+  color: black;
+}
+.resume{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   min-width: 318px;
-  border-radius: 20px 0 20px 0;
-  color: white;
-}
-.resume a{
-  font-size: 30px;
-  color: white;
-}
-.resume h2 {
-  font-size: 40px;
-}
-.resume h3 {
-  font-size: 40px;
-}
-.resume p {
-  font-size: 40px;
-}
-.experience {
-  width: 80%;
-  margin: 0 auto;
-}
-.job {
-  border-left: 3px solid whitesmoke;
-  border-bottom: 3px solid whitesmoke;
-}
-.skills {
-  border-left: 3px solid whitesmoke;
-  border-bottom: 3px solid whitesmoke;
-  width: 80%;
-  margin: 0px auto 10px auto;
+  color: black;
+  justify-content: space-between;
+  padding: 0px 10px;
+  font-size: 3em;
 }
 
 
@@ -228,8 +210,40 @@ figcaption {
   #projects {
     display: block;
   }
+  .resume {
+    font-size: 3em;
+  }
+  .border {
+    border: none;
+    width: 100%;
+  }
+  #projects {
+    margin: 10px 0px;
+    width: 100%;
+  }
+  .Project {
+    border: none;
+    width: 100%;
+  }
+  .Project img {
+    width: 100%;
+    border: none;
+    margin: 10px 0px;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .flex h3 {
+    padding: 0px 10px;
+  }
+  .border {
+    width: 100%;
+    border: none;
+  }
   .about {
     text-align: center;
     display: grid;
@@ -246,11 +260,12 @@ figcaption {
     width: 90%;
     margin: auto auto;
   }
-
+  
   .personal {
     border-left: none;
     margin-top: 40px;
   }
+  
   .Project a {
     font-size: 20px;
   }
@@ -270,12 +285,10 @@ figcaption {
   }
   nav {
     display: grid;
-    background: linear-gradient(to left, black, rgb(22, 22, 22), black);
     padding: 20px 0 0 0;
     margin: 0;
     align-items: center;
     grid-template-columns: 1fr;
-    border-bottom: 6px solid var(--maroon);
   }
   .navLinks {
     display: flex;
