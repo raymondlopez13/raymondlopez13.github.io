@@ -196,7 +196,19 @@ figcaption {
   font-size: 3em;
 }
 
-
+/* ANIMATIONS */
+#resume, .foot2 {
+  animation-delay: .5s;
+}
+#portfolio, .foot3 {
+  animation-delay: 1s;
+}
+.navLink:active {
+  color:orange;
+}
+.foot4 {
+  animation-delay: 1.5s;
+}
 
 
 /* Media queries */
@@ -224,6 +236,7 @@ figcaption {
   .Project {
     border: none;
     width: 100%;
+    margin: 10px 0px;
   }
   .Project img {
     width: 100%;
