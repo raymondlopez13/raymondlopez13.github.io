@@ -24,7 +24,12 @@ function App() {
         setPage={setPage}
         renderPage={renderPage}
       />
-      {renderPage()}
+      <div className='body'>
+        <div class='main'>
+          {renderPage()}
+        </div>
+      </div>
+      
     </div>
   );
 }

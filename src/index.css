@@ -10,6 +10,14 @@ body {
   font-family: Teko, 'serif';
   letter-spacing: 1px;
 }
+.main {
+  max-width: 2048px;
+  margin: 0px auto;
+  background-color: white;
+}
+.body {
+  background: linear-gradient(black, gray);
+}
 /* NAV STYLES */
 nav {
   display: grid;
@@ -70,7 +78,7 @@ nav {
 }
 .aboutMeH1 {
   color: black;
-  font-size: 40px;
+  font-size: 3em;
 }
 .about-text {
   width: 75%;
@@ -79,7 +87,7 @@ nav {
   max-width: 1024px;
 }
 .aboutP {
-  font-size: 30px;
+  font-size: 2.5em;
   color: black;
   padding: 5px;
 }
@@ -98,7 +106,7 @@ nav {
 }
 .rockets-p {
   color: black;
-  font-size: 25px;
+  font-size: 2.5em;
   margin: auto;
   width: 75%;
 }
