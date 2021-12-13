@@ -52,18 +52,7 @@ function Portfolio() {
     }
     return (
         <section id="projects">
-            {projects.map((project) => (
-                <div className="Project" key={project.name}>
-                    {photoReturn(project.name)}
-                    <div>
-                        <h3>{project.name}</h3>
-                        <a href={project.github} target='_blank' rel="noreferrer"><FaGithub /></a>
-                        <a href={project.app} target='_blank' rel="noreferrer"><FaGlobe /></a>
-                    </div>
-                    <p>{project.description}</p>
-                    <div><h3>Technologies used:</h3> <h1 className='tech'>{project.tech}</h1></div>
-                </div>
-            ))}
+            
         </section>
     )
 }
