@@ -3,10 +3,17 @@
   --pink: #552f23;
   --green: #DFE2CF;
 }
+html {
+  background-color: aquamarine;
+}
 body {
   background-color: white;
-  margin: 0;
+  margin: 0px auto;
   line-height: 2;
   font-family: Roboto, 'serif';
   letter-spacing: 1px;
+  max-width: 1400px;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
 }

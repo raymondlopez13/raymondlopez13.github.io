@@ -4,7 +4,7 @@ import resume from '../../assets/Resume.docx';
 function Resume() {
     return (
         <section id='resume'>
-
+            Resume
         </section>
     )
 }

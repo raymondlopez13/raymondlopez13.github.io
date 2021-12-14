@@ -52,7 +52,7 @@ function Portfolio() {
     }
     return (
         <section id="projects">
-            
+            Portfolio
         </section>
     )
 }

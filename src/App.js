@@ -3,34 +3,18 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 function App() {
-  const [page, setPage] = useState('About Me');
-  function renderPage() {
-    switch(page) {
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Resume':
-        return <Resume />;
-      case 'About Me':
-        return <About />;
-      default:
-        return <About />;
-    }
-  }
   return (
-    <div className="">
-      <Nav
-        page={page}
-        setPage={setPage}
-        renderPage={renderPage}
-      />
-      <div className='body'>
-        <div class='main'>
-          {renderPage()}
-        </div>
-      </div>
-      
-    </div>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<About />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/resume' element={<Resume />} />
+      </Routes>
+    </Router>
   );
 }
 
