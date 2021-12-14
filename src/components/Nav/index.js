@@ -6,12 +6,12 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function Nav() {
     const menu = () => {
-        const links = document.getElementsByClassName('nav-link-container')[0];
+        const links = document.getElementById('nav-link-container');
         links.setAttribute('style', 'display: flex !important');
     }
     const close = () => {
-        const links = document.getElementsByClassName('nav-link-container')[0];
-        links.setAttribute('style', 'display: none !important');
+        const links = document.getElementById('nav-link-container');
+        if(window.screen.width < 901) links.setAttribute('style', 'display: none !important');
     }
     return (
         <Grid container className='nav'>
@@ -20,7 +20,7 @@ function Nav() {
                     Raymond Lopez
                 </Link>
             </Grid>
-            <Grid container item xs={12} md={6} spacing={2} className='nav-link-container'>
+            <Grid container item xs={12} md={6} spacing={2} className='nav-link-container' id='nav-link-container'>
                 <Grid item xs={12} md={6} className='close-icon-container' onClick={close}>
                     <CloseIcon />
                 </Grid>

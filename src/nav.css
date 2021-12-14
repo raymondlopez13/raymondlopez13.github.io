@@ -6,10 +6,10 @@
     text-decoration: none;
 }
 .nav-link{
-    font-size: larger;
+    font-size: x-large;
 }
 .nav-link-title {
-    font-size: larger; 
+    font-size: x-large; 
 }
 .nav-link-title-container {
     padding-left: 10px;
@@ -44,7 +44,7 @@ ul {
         animation-name: nav;
     }
     .nav-link, .close-icon-container {
-        animation-duration: 1.5s;
+        animation-duration: 2s;
         animation-name: fade;
     }
     .menu-icon-container {
