@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Item } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -25,12 +25,12 @@ function Nav() {
                     <CloseIcon />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <Link to='/portfolio' className='nav-link'>
+                    <Link to='/portfolio' className='nav-link' onClick={close}>
                         Portfolio
                     </Link>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <Link to='/resume' className='nav-link'>
+                    <Link to='/resume' className='nav-link' onClick={close}>
                         Resume
                     </Link>
                 </Grid>
