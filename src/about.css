@@ -1,10 +1,42 @@
 #about {
     padding: 10px 20px;
     font-size: larger;
+    border-bottom: 1px solid black;
+}
+.headshot {
+    margin: auto;
+}
+.interests {
+    text-align: center;
+}
+#resume {
+    text-align: center;
+}
+.about-resume-header {
+    text-align: center;
+}
+.about-resume-topic {
+    text-align: center;
+    border-right: 1px solid black;
+}
+.about-resume-abilities {
+    text-align: center;
+}
+.about-resume-row {
+    border-top: 1px solid black;
 }
 
 @media only screen and (max-width: 900px) {
     #about {
         font-size: large;
+    }
+    .paragraph {
+        text-align: center;
+    }
+    #about-resume {
+        display: none;
+    }
+    #about-sidebar {
+        display: none;
     }
 }

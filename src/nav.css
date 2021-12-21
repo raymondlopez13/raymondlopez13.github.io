@@ -69,6 +69,7 @@ ul {
         animation-duration: .5s;
         animation-name: nav;
         border-bottom: 1px solid black;
+        z-index: 2;
     }
     .nav-link, .close-icon-container {
         animation-duration: 2s;
