@@ -25,6 +25,25 @@
 .about-resume-row {
     border-top: 1px solid black;
 }
+#about-sidebar {
+    background-color: rgb(238, 238, 238);
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 0px 5px;
+}
+.about-project-image {
+    width: 100%;
+    box-shadow: 1px 1px 2px black;
+}
+.about-project {
+    padding-top: 40px;
+}
+.about-project:first-child {
+    padding-top: 0px;
+}
+.about-sidebar-header {
+    text-align: center;
+}
 
 @media only screen and (max-width: 900px) {
     #about {
