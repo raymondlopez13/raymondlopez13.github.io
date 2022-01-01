@@ -33,10 +33,10 @@ function About() {
     ];
     return (
         <Grid container className='about-main'>
-            <Grid container md={8} xs={12} id='main'>
-                <Grid container item md={12} xs={12}id="about">
-                    <Grid container item md={4} xs={12}>
-                        <Grid md={12} xs={12} className='interests'>
+            <Grid item md={8} xs={12} id='main'>
+                <Grid container md={12} xs={12}id="about">
+                    <Grid item md={4} xs={12}>
+                        <Grid item md={12} xs={12} className='interests'>
                             <Avatar 
                                 src='/images/Headshot-min.17d7b039.jpg' 
                                 alt='Headshot'
@@ -54,7 +54,7 @@ function About() {
                         </p>
                     </Grid>
                 </Grid>
-                <Grid container item md={12} id='about-resume'>
+                <Grid container md={12} id='about-resume'>
                     <Grid item md={12} className='about-resume-header'>
                         <h2>Resume</h2>
                     </Grid>
@@ -66,7 +66,7 @@ function About() {
                         </Grid>
                         <Grid item md={9}  className='about-resume-abilities'>
                             <h3>
-                                English(fluent), JavaScript(intermediate), Python(beginner), Java(complete noob)
+                                JavaScript(intermediate), Python(beginner), Java(complete noob)
                             </h3>
                         </Grid>
                         <Grid container item md={12} className='about-resume-row'>
