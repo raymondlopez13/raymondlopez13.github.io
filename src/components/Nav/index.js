@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';

@@ -1,4 +1,4 @@
-#about {
+#about, #about-featured-project {
     padding: 10px 20px;
     font-size: larger;
     border-bottom: 1px solid black;
@@ -29,9 +29,12 @@
 }
 #about-sidebar {
     background-color: rgb(238, 238, 238);
-    height: 95vh;
+    height: 100vh;
     overflow-y: scroll;
     padding: 0px 5px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 .about-project-image {
     width: 100%;
@@ -46,6 +49,13 @@
 .about-sidebar-header {
     text-align: center;
 }
+#about-featured-project {
+    justify-content: center;
+    margin-top: 20px;
+}
+#about-featured-project p {
+    margin: 10px;
+}
 
 @media only screen and (max-width: 900px) {
     #about {
@@ -54,10 +64,7 @@
     .paragraph {
         text-align: center;
     }
-    #about-resume {
-        display: none;
-    }
-    #about-sidebar {
+    #about-resume, #about-featured-project, #about-sidebar {
         display: none;
     }
 }
