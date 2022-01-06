@@ -24,19 +24,14 @@ function Nav() {
                 <Grid item xs={12} md={6} className='close-icon-container' onClick={close}>
                     <CloseIcon />
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={6}>
                     <Link to='/' className='nav-link' onClick={close}>
                         About
                     </Link>
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={6}>
                     <Link to='/portfolio' className='nav-link' onClick={close}>
                         Portfolio
-                    </Link>
-                </Grid>
-                <Grid item xs={12} md={4}>
-                    <Link to='/resume' className='nav-link' onClick={close}>
-                        Resume
                     </Link>
                 </Grid>
             </Grid>
