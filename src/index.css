@@ -1,20 +1,23 @@
-:root {
-  --maroon: #264932;
-  --pink: #552f23;
-  --green: #DFE2CF;
-}
 html {
-  background-color: aquamarine;
+  width: 100vw;
+  height: 100vh;  
 }
 body {
   background-color: white;
   margin: 0px auto;
   line-height: 2;
-  font-family: Roboto, 'serif';
+  font-family: 'Press Start 2P', cursive;
   letter-spacing: 1px;
-  max-width: 1400px;
-  min-height: 100vh;
 }
 h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 32px;
 }
