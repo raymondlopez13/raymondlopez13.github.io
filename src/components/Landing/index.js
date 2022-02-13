@@ -17,9 +17,9 @@ function Landing() {
             <div className='bottom-right'>
                 <h1>Menu</h1>
                 <h2><Link to='about'>About</Link></h2>
-                <h2><Link to='about'>Portfolio</Link></h2>
-                <h2><Link to='about'>Resume</Link></h2>
-                <h2><Link to='about'>Contact</Link></h2>
+                <h2><Link to='portfolio'>Portfolio</Link></h2>
+                <h2><Link to='resume'>Resume</Link></h2>
+                <h2><Link to='contact'>Contact</Link></h2>
             </div>
         </div>
     )
