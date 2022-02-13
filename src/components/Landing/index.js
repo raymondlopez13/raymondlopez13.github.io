@@ -8,12 +8,6 @@ function Landing() {
                 <img src='images/headshot.jpg' alt='Headshot'/>
                 <h1>Raymond Lopez</h1>
             </div>
-            <div className='top-right'>
-
-            </div>
-            <div className='bottom-left'>
-
-            </div>
             <div className='bottom-right'>
                 <h1>Menu</h1>
                 <h2><Link to='about'>About</Link></h2>
