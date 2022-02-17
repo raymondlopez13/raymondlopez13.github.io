@@ -2,6 +2,7 @@
     font-size: 5em;
     border: none;
     background: none;
+    color: black;
 }
 .close-menu-btn {
     color: white;
@@ -9,15 +10,36 @@
 }
 .nav {
     background-color: rgba(0, 0, 0, .95);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: absolute;
 }
 .link-container {
     width: 75%;
     min-width: 600px;
-    background-color: rgba(56, 56, 56, .95);
-    height: 100vh;
+    background-color: rgba(56, 56, 56, .85);
+    height: 100%;
     margin: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link {
+    padding: 30px;
+}
+.title {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 950px) {
+    .menu-btn, .close-menu-btn {
+        font-size: 3em;
+    }
+    .link-container {
+        min-width: 100px;
+        width: 100%;
+    }
+    .link {
+        padding: 10px;
+    }
 }

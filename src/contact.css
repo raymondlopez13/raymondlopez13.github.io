@@ -1,0 +1,6 @@
+.contact {
+    text-align: center;
+}
+.contact h1, .contact a, .contact h2 {
+    padding: 20px;
+}

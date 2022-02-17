@@ -1,0 +1,83 @@
+#resume {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+}
+.resume-left-column, .resume-right-column {
+    display: flex;
+    flex-direction: column;
+}
+.resume-left-column h3, .resume-right-column h3 {
+    padding: 20px;
+}
+.resume-title {
+    grid-area: 1/1/2/3;
+}
+.resume-link {
+    grid-area: 2/1/3/3;
+}
+.progress-bar {
+    width: 75%;
+    height: fit-content;
+    border: 6px solid #d8d8d8;
+    margin: auto;
+}
+.progress {
+    height: 20px;
+    background:black;
+    color: white;
+}
+.hundred-progress {
+    width: 100%;
+    animation: progressBarAnimateHundred 1.75s;
+}
+.half-progress {
+    width: 50%;
+    animation: progressBarAnimateHalf 1.5s;
+}
+.threeQtr-progress {
+    width: 75%;
+    animation: progressBarAnimateThreeQtr 1.25s;
+}
+.qtr-progress {
+    width: 25%;
+    animation: progressBarAnimateQtr 1s;
+}
+@keyframes progressBarAnimateHundred{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes progressBarAnimateThreeQtr{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 75%;
+    }
+}
+@keyframes progressBarAnimateHalf{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+@keyframes progressBarAnimateQtr{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .resume-left-column, .resume-right-column {
+        grid-column: span 2;
+    }
+}

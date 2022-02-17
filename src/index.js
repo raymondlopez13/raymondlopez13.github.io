@@ -5,6 +5,8 @@ import './nav.css';
 import './about.css';
 import './portfolio.css';
 import './landing.css';
+import './contact.css';
+import './resume.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

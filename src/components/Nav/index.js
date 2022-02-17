@@ -24,9 +24,21 @@ function Nav() {
                         <button className='close-menu-btn' onClick={click}>
                             <AiOutlineClose/>
                         </button>
-                        <div className='link-container'>
-                            These are some links
-                        </div>
+                        <nav className='link-container'>
+                            <h1 className='title'>Menu</h1>
+                            <Link to='about' onClick={click}><a className='link'><h1>
+                                About    
+                            </h1></a></Link>
+                            <Link to='portfolio' onClick={click}><a className='link'><h1>
+                                Portfolio    
+                            </h1></a></Link>
+                            <Link to='resume' onClick={click}><a className='link'><h1>
+                                Resume    
+                            </h1></a></Link>
+                            <Link to='contact' onClick={click}><a className='link'><h1>
+                                Contact    
+                            </h1></a></Link>
+                        </nav>
                     </div>
                     :
                     <button className='menu-btn' onClick={click}>
