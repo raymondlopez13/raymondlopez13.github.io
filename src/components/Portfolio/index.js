@@ -1,143 +1,63 @@
-import React, { useState } from 'react';
-import { Grid } from '@mui/material';
-import Box from '@mui/material/Box';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import nowPlaying from '../../assets/nowPlaying.png';
-import carWashYeah_Home from '../../assets/CarWashYeah_Home.png';
-import carWashYeah_AppointmentTimes from '../../assets/CarWashYeah_AppointmentTimes.png';
-import carWashYeah_Calender from '../../assets/CarWashYeah_Calender.png';
-import carWashYeah_Form from '../../assets/CarWashYeah_Form.png';
-import carWashYeah_PayPal from '../../assets/CarWashYeah_PayPal.png';
-import carWashYeah_Services from '../../assets/CarWashYeah_Services.png';
-import Cinequiz from '../../assets/cinequiz.jpg';
-import Roster_Home from '../../assets/Roster_Home.png';
-import Roster_Player from '../../assets/Roster_Player.png';
-import Roster_Roster from '../../assets/Roster_Roster.png';
-import PetPlace_Home from '../../assets/PetPlace-Home.png'
-import PetPlace_LoginHome from '../../assets/PetPlace_LoginHome.png'
-import PetPlace_PetProfile from '../../assets/PetPlace_PetProfile.png'
-import PetPlace_EditPet from '../../assets/PetPlace_EditPet.png'
+import React from 'react';
+import Project from './projects';
+
+
 function Portfolio() {
-    const [ filter, setFilter ] = useState(1);
     const projects = [
         {
-            name: 'Now Playing',
-            description: 'Now playing is a social media app that lets users see what albums their friends have been listening to. For this project I was mainly in charge of the backend. I used express for the routing and sequelize to serve data for the front end team.',
-            tech: 'Handlebars, Express, Sequelize',
-            github: 'https://github.com/drewvena/now-playing',
-            app: 'https://nowplayingapp.herokuapp.com/login',
-            image: [nowPlaying],
-            filter: [1, 3, 5]
-        },
-        {
-            name: 'Flambot-Corp',
-            description: 'Flambot-Corp is an online shopping website that lets users create accounts and login, add items to cart, filter items, as well as checkout. For this project I was in charge of the back end. I used created models using mongoose, and used GraphQL for serving data. Stripe API was used to incorporate a checkout.',
-            tech: 'Stripe, React, IndexedDB, Express, Semanic UI, GraphQL, Apollo',
-            github: 'https://github.com/drewvena/flambot-corp',
-            app: 'https://flambot-corp.herokuapp.com/',
-            image: ['https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png'],
-            filter: [1, 2, 5, 6]
-        },
-        {
-            name: 'Car Wash Yeah',
-            description: 'Car Wash Yeah is a site where users can schedule appointments for a car detail. Users can choose between a detail for their car or truck, then get to set the appointment date, and time based on the availability of the Admin. Once a time is chosen, users are then asked to give their information, and pay using the PayPal API. Upon payment, they are taken to a success screen where they can go back to the home page.',
-            tech: 'React, PayPal API, MongoDB, react-calender, axios',
-            github: 'https://github.com/raymondlopez13/car-wash',
-            app: 'https://carwashyeah.herokuapp.com/',
-            image: [carWashYeah_Home, carWashYeah_AppointmentTimes, carWashYeah_Calender, carWashYeah_Form, carWashYeah_PayPal, carWashYeah_Services],
-            filter: [1, 2, 5, 6]
-        },
-        {
-            name: 'Cinequiz',
-            description: "Cinequiz is a movie quiz game where users are presented with a movie and six actors. Four of those actors are in the movie and two are not. The user can choose the actors they think are in the movie, but if they guess incorrectly, they are taken to the next question. Each correct guess the user will be awarded a point, at the end users can see how well they did vs how they've done in the past.",
-            tech: "OMDb API, JavaScript, HTML, CSS, Giphy API",
+            title: 'Cinequiz',
+            images: [
+                'https://github.com/drewvena/git-it-right/blob/main/images/index.png?raw=true',
+                'https://github.com/drewvena/git-it-right/blob/main/images/game.png?raw=true',
+                'https://github.com/drewvena/git-it-right/blob/main/images/highscores.png?raw=true'
+                
+            ],
+            description: 'This is a movie game application that uses the OMDb API to gather information on films and grab the top 4 actors from each individual movie. The game also randomly generates the movie along with two incorrect answers. There are 4 correct answers and 2 incorrect answers The game also uses the GIPHY API to fetch gifs based on user input criteria (such as the movie name, and the actors name that the user clicks.) Highscores are saved to local storage and displayed!',
             github: 'https://github.com/drewvena/git-it-right',
-            app: 'https://drewvena.github.io/git-it-right/',
-            image: [Cinequiz],
-            filter: [1]
+            liveApp: 'https://drewvena.github.io/git-it-right/',
+            tech: ['HTML', 'CSS', 'Javascript']
         },
-        {
-            name: 'Roster Tracker',
-            description: 'Roster Tracker is an app where users can create different rosters with members and roles.',
-            tech: 'Django, HTML, CSS, PostgreSQL, heroku',
-            github: 'https://github.com/raymondlopez13/djagno_employee_tracker',
-            app: 'https://raymondlopez13-django-roster.herokuapp.com/',
-            image: [Roster_Home, Roster_Player, Roster_Roster],
-            filter: [1, 3, 4]
+        {   title: 'Now Playing',
+            images: [
+                'https://user-images.githubusercontent.com/69886471/114311521-bb2cd380-9ab4-11eb-8168-ce78881d2146.png',
+                'https://user-images.githubusercontent.com/69886471/114311407-38a41400-9ab4-11eb-856b-765b1c0c1616.png',
+                'https://user-images.githubusercontent.com/69886471/114311434-5b362d00-9ab4-11eb-8810-749c951af02a.png',
+                'https://user-images.githubusercontent.com/69886471/114311442-66895880-9ab4-11eb-8fe6-e03cd0be2a70.png',
+                'https://user-images.githubusercontent.com/69886471/114311453-743ede00-9ab4-11eb-9eca-3304b1a1780e.png',
+                'https://user-images.githubusercontent.com/69886471/114311470-815bcd00-9ab4-11eb-83f6-28442e1e641c.png'
+            ],
+            description: 'A project for the University of Texas Coding Bootcamp. Now Playing is a music-focused social media app for sharing and discovering new music. Users can create posts, like posts and add comments. The home feed can be filtered based on different criteria including genre and decade. The is also a search page to find specific users or posts. This application follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, MySQL and Sequelize ORM for the database, and the express-session npm package for authentication.',
+            github: 'https://github.com/drewvena/now-playing/tree/main',
+            liveApp: 'https://nowplayingapp.herokuapp.com/',
+            tech: ['Handlebars', 'SQL', 'Express']
         },
-        {
-            name: 'Pet Place',
-            description: 'My pets is an app that allows users to keep track of their pets! Users can create a profile and create pets. Users are able to add information for their pets such as weight, breed, vaccinations, medications, and even a pet photo!',
-            tech: 'React, Node, Express, S3 Bucket, MongoDB, heroku',
-            github: 'https://github.com/raymondlopez13/Pet-Social',
-            app: 'https://my-pets-raymondlopez13.herokuapp.com/',
-            image: [PetPlace_Home, PetPlace_EditPet, PetPlace_LoginHome, PetPlace_PetProfile],
-            filter: [1, 2, 5, 6]
+        {   title: 'Flambot-Corp',
+            images: [
+                'https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png',
+                'https://user-images.githubusercontent.com/69886471/120904390-b6e2e980-c611-11eb-9167-457f9db7a67e.png',
+                'https://user-images.githubusercontent.com/69886471/120904401-c19d7e80-c611-11eb-9ac3-618cc22ab97d.png',
+                'https://user-images.githubusercontent.com/69886471/120904405-c82bf600-c611-11eb-8324-4e2bc6f98983.png',
+                'https://user-images.githubusercontent.com/69886471/120904419-d843d580-c611-11eb-8c6b-cae06d1cb26f.png',
+                'https://user-images.githubusercontent.com/69886471/120904427-e134a700-c611-11eb-80d6-bed3ea0ce6f7.png',
+                'https://user-images.githubusercontent.com/69886471/120904659-f4944200-c612-11eb-902b-56cfe755534a.png'
+            ],
+            description: 'This is a REACT Global State application project for our full stack JavaScrip development boot-camp at the University of Texas. This application is a T-shirt store where you would be able to shop for t-shirts by filtered selection, signup/Login, and checkout using Stripe online payment. GraphQL is used on the backend.',
+            github: 'https://github.com/drewvena/flambot-corp',
+            liveApp: 'https://flambot-corp.herokuapp.com/',
+            tech: ['React', 'MongoDB', 'GraphQL', 'Apollo']
         }
-    ];
-    const filterProjects = arr => {
-        if (arr.includes(filter)) {
-            return true;
-        } else {
-            return false;
-        }
-    };
-    const selectFilter = () => {
-        const x = Number(document.getElementById('selectFilter').value);
-        setFilter(x);
-    }
+    ]
     return (
-        <Grid container className='portfolio-main'>
-            <Grid item md={12} xs={12} className='filter-section'>
-                <h2>Projects</h2>
-                <label for='filter'>Filter: </label>
-                <select name='filter' onChange={selectFilter} id='selectFilter'>
-                    <option value='1'>All</option>
-                    <option value='2'>React</option>
-                    <option value='3'>SQL</option>
-                    <option value='4'>Django</option>
-                    <option value='5'>Node</option>
-                    <option value='6'>MongoDB</option>
-                </select>
-            </Grid>
-            <Grid item md={10} xs={12} className='projects'>
-                {projects.map(project => (
-                    <div className='project'>
-                        {filterProjects(project.filter) ? 
-                            <div>
-                                <h1>{project.name}</h1>
-                                <Carousel infiniteLoop={true} autoPlay={true}>
-                                    {project.image.map(img => (
-                                        <Box
-                                            component='img'
-                                            sx={{
-                                                display: 'block',
-                                                maxWidth: 900,
-                                                overflow: 'hidden',
-                                                width: '100%'
-                                            }}
-                                            src={img}
-                                            alt=''
-                                        />
-                                    ))}
-                                </Carousel>
-                                <p>{project.description}</p>
-                                <div>
-                                    <a href={project.github}>Github</a>
-                                    <a href={project.app}>Live App</a>
-                                </div>
-                                <br />
-                            </div>
-                            :
-                            <div></div>
-                        }
-                        
-                    </div>
-                    
-                ))}
-            </Grid>
-        </Grid>
-    )
+        <div className='portfolio'>
+            <h1>
+                Portfolio
+            </h1>
+            <div className='projects'>
+                {projects.map(project => {
+                    return <Project project={project} />
+                })}
+            </div>
+        </div>
+    );
 }
 export default Portfolio;
