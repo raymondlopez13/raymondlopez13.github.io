@@ -29,8 +29,46 @@ ul {
     margin-bottom: 10px;
     color: black;
 }
+.close-btn {
+    font-size: 3em;
+    color: black;
+    background-color: white;
+    border: 10px solid black;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+.githubLiveApp {
+    display: flex;
+    justify-content: center;
+}
+.GHLink {
+    padding: 0px 20px;
+    font-size: 5em;
+}
+.tech {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tech-item {
+    padding: 0px 15px;
+}
+
 @media only screen and (max-width: 950px) {
     .img {
         width: 100%;
+    }
+    .close-btn {
+        font-size: 2em;
+        border: 4px solid black;
+        color: black;
+    }
+    .view-btn {
+        border: 4px solid black;
+    }
+    .GHLink {
+        padding: 0px 10px;
+        font-size: 3em;
     }
 }

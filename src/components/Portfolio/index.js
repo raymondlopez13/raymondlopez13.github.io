@@ -6,6 +6,7 @@ function Portfolio() {
     const projects = [
         {
             title: 'Cinequiz',
+            id: 1,
             images: [
                 'https://github.com/drewvena/git-it-right/blob/main/images/index.png?raw=true',
                 'https://github.com/drewvena/git-it-right/blob/main/images/game.png?raw=true',
@@ -18,6 +19,7 @@ function Portfolio() {
             tech: ['HTML', 'CSS', 'Javascript']
         },
         {   title: 'Now Playing',
+            id: 2,
             images: [
                 'https://user-images.githubusercontent.com/69886471/114311521-bb2cd380-9ab4-11eb-8168-ce78881d2146.png',
                 'https://user-images.githubusercontent.com/69886471/114311407-38a41400-9ab4-11eb-856b-765b1c0c1616.png',
@@ -32,6 +34,7 @@ function Portfolio() {
             tech: ['Handlebars', 'SQL', 'Express']
         },
         {   title: 'Flambot-Corp',
+            id: 3,
             images: [
                 'https://user-images.githubusercontent.com/69886471/120904381-ab8fbe00-c611-11eb-86d9-97ebb506a933.png',
                 'https://user-images.githubusercontent.com/69886471/120904390-b6e2e980-c611-11eb-9167-457f9db7a67e.png',
@@ -41,7 +44,7 @@ function Portfolio() {
                 'https://user-images.githubusercontent.com/69886471/120904427-e134a700-c611-11eb-80d6-bed3ea0ce6f7.png',
                 'https://user-images.githubusercontent.com/69886471/120904659-f4944200-c612-11eb-902b-56cfe755534a.png'
             ],
-            description: 'This is a REACT Global State application project for our full stack JavaScrip development boot-camp at the University of Texas. This application is a T-shirt store where you would be able to shop for t-shirts by filtered selection, signup/Login, and checkout using Stripe online payment. GraphQL is used on the backend.',
+            description: 'This is a REACT Global State application project for our full stack JavaScript development boot-camp at the University of Texas. This application is a T-shirt store where you would be able to shop for t-shirts by filtered selection, signup/Login, and checkout using Stripe online payment. GraphQL is used on the backend.',
             github: 'https://github.com/drewvena/flambot-corp',
             liveApp: 'https://flambot-corp.herokuapp.com/',
             tech: ['React', 'MongoDB', 'GraphQL', 'Apollo']
