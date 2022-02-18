@@ -1,39 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.799b79f4.chunk.css",
-    "main.js": "/static/js/main.2d6e0042.chunk.js",
-    "main.js.map": "/static/js/main.2d6e0042.chunk.js.map",
+    "main.css": "/static/css/main.60bb3ab0.chunk.css",
+    "main.js": "/static/js/main.e8df3fff.chunk.js",
+    "main.js.map": "/static/js/main.e8df3fff.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b83279d6.js",
     "runtime-main.js.map": "/static/js/runtime-main.b83279d6.js.map",
     "static/css/2.6b560088.chunk.css": "/static/css/2.6b560088.chunk.css",
-    "static/js/2.ec3d07ef.chunk.js": "/static/js/2.ec3d07ef.chunk.js",
-    "static/js/2.ec3d07ef.chunk.js.map": "/static/js/2.ec3d07ef.chunk.js.map",
+    "static/js/2.be69bf08.chunk.js": "/static/js/2.be69bf08.chunk.js",
+    "static/js/2.be69bf08.chunk.js.map": "/static/js/2.be69bf08.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.6b560088.chunk.css.map": "/static/css/2.6b560088.chunk.css.map",
-    "static/css/main.799b79f4.chunk.css.map": "/static/css/main.799b79f4.chunk.css.map",
-    "static/js/2.ec3d07ef.chunk.js.LICENSE.txt": "/static/js/2.ec3d07ef.chunk.js.LICENSE.txt",
-    "static/media/CarWashYeah_AppointmentTimes.660f3002.png": "/static/media/CarWashYeah_AppointmentTimes.660f3002.png",
-    "static/media/CarWashYeah_Calender.7dae30fe.png": "/static/media/CarWashYeah_Calender.7dae30fe.png",
-    "static/media/CarWashYeah_Form.017160b3.png": "/static/media/CarWashYeah_Form.017160b3.png",
-    "static/media/CarWashYeah_Home.d60a2e60.png": "/static/media/CarWashYeah_Home.d60a2e60.png",
-    "static/media/CarWashYeah_PayPal.67506ac9.png": "/static/media/CarWashYeah_PayPal.67506ac9.png",
-    "static/media/CarWashYeah_Services.4b4ba4f8.png": "/static/media/CarWashYeah_Services.4b4ba4f8.png",
-    "static/media/PetPlace-Home.346f6d58.png": "/static/media/PetPlace-Home.346f6d58.png",
-    "static/media/PetPlace_EditPet.53eaea6d.png": "/static/media/PetPlace_EditPet.53eaea6d.png",
-    "static/media/PetPlace_LoginHome.85a21f1a.png": "/static/media/PetPlace_LoginHome.85a21f1a.png",
-    "static/media/PetPlace_PetProfile.58f99999.png": "/static/media/PetPlace_PetProfile.58f99999.png",
-    "static/media/Resume.9e6151df.docx": "/static/media/Resume.9e6151df.docx",
-    "static/media/Roster_Home.d70e5c4f.png": "/static/media/Roster_Home.d70e5c4f.png",
-    "static/media/Roster_Player.f70e6b52.png": "/static/media/Roster_Player.f70e6b52.png",
-    "static/media/Roster_Roster.f690b7ab.png": "/static/media/Roster_Roster.f690b7ab.png",
-    "static/media/cinequiz.13743d83.jpg": "/static/media/cinequiz.13743d83.jpg",
-    "static/media/nowPlaying.e4d82e19.png": "/static/media/nowPlaying.e4d82e19.png"
+    "static/css/main.60bb3ab0.chunk.css.map": "/static/css/main.60bb3ab0.chunk.css.map",
+    "static/js/2.be69bf08.chunk.js.LICENSE.txt": "/static/js/2.be69bf08.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b83279d6.js",
     "static/css/2.6b560088.chunk.css",
-    "static/js/2.ec3d07ef.chunk.js",
-    "static/css/main.799b79f4.chunk.css",
-    "static/js/main.2d6e0042.chunk.js"
+    "static/js/2.be69bf08.chunk.js",
+    "static/css/main.60bb3ab0.chunk.css",
+    "static/js/main.e8df3fff.chunk.js"
   ]
 }
