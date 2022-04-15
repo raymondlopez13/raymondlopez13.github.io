@@ -1,5 +1,5 @@
 # Portfolio
-My personal portfolio! Users can navigate and view my projects, resume, and contact information!
+My personal portfolio, users can navigate and view my projects, resume, and contact information!
 
 ## Deployed app
 https://raymondlopez13.github.io/
